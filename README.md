@@ -1,3 +1,34 @@
+```sh
+====== CONFIGURATION DE L'URL ======
+git config git-ftp.url ftp.cluster021.hosting.ovh.net/www/foo/bar
+
+- /www/ important pour ovh
+
+
+
+====== CONFIGURATION DU USER ======
+git config git-ftp.user username
+
+
+
+====== CONFIGURATION DU PASSWORD ======
+git config git-ftp.password password
+
+
+
+====== POUR REGLER L'ERREUR CURL ======
+Créer un fichier vide ".git-ftp.log" dans /www/www/foo/bar
+
+
+
+====== ADD / COMMIT / PUSH ======
+git add -A
+git commit -am "Init"
+git ftp push
+
+````
+
+
 Git-ftp -- uploads to FTP servers the Git way
 =============================================
 
